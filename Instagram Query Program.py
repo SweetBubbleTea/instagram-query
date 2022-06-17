@@ -5,6 +5,7 @@ import pandas as pd
 import numpy as np
 import re
 
+# Customize the following variables to fit your queries
 max_followers = 5000
 min_followers = 100
 head = 0
@@ -16,6 +17,7 @@ df = df.loc[df["followers"] < max_followers]
 df = df[df["bio"].notna()]
 df = df[df["followers"] > min_followers]
 
+# Queries for high schools, universities, and years
 hs_query = 'qa|nchs|ice|ahs|south division 21’|whitney 2020|ccat|carver|ascs|bdhs|kchs|cuyahoga falls|oak hill|high school|highschool|mshs|ajhs|battle mountain|avhs|eleanor roosevelt high'
 highschool = df[df['bio'].str.contains(query, flags = re.IGNORECASE)]
 
@@ -24,7 +26,6 @@ university = df[df['bio'].str.contains(college_query, flags=re.IGNORECASE)]
 
 year_query = 'c"\\"o2021|\'21|‘21|co21|c"\\"o21|c"\\"o2020|\'20|co20|‘20|c"\\"o20|c"\\"o2019|‘19|\'19|co19|c"\\"o19|c"\\"o2018|‘18|\'18|co18|c"\\"o18|c"\\"o2017|\'17|‘17|co17|c"\\"o17'
 year = df[df['bio'].str.contains(year_query, flags=re.IGNORECASE)]
-
 
 private_query = 'sspp'
 private = df[df['bio'].str.contains(private_query, flags=re.IGNORECASE)]
