@@ -4,9 +4,6 @@ Designed using Juypter Notebook in order to filter and query different users bas
 ## Usage
 Replace and insert your own .csv file. Take note that python doesn't recongize backwards slash. 
 ```python
-max_followers = 10000
-min_followers = 100
-head = 0
 file = "replace_with_csv_file_path"
 ```
 
