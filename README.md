@@ -1,4 +1,4 @@
-# instagram-query
+# Instagram Query
 Designed using Juypter Notebook in order to filter and query different users based on the schools they are currently enrolled into. Allows for the user to insert a .csv file that contains name, biography, username, and followers count data resepctively. 
 
 ## Usage
