@@ -21,7 +21,7 @@ college_query = 'university|jhu|college|john hopkins|stanford|mit|cmu|university
 year_query = 'c"\\"o2021|\'21|‘21|co21|c"\\"o21|c"\\"o2020|\'20|co20|‘20|c"\\"o20|c"\\"o2019|‘19|\'19|co19|c"\\"o19|c"\\"o2018|‘18|\'18|co18|c"\\"o18|c"\\"o2017|\'17|‘17|co17|c"\\"o17'
 ```
 
-Change the directory of the output file by editing the [directory] to be the absolute path of where you want the file to be exported. 
+Change the directory of the output file by editing the `directory` to be the absolute path of where you want the file to be exported. 
 
 ```python
 directory = 'instagram query'
